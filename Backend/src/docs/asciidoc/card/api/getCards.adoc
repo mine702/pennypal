@@ -1,0 +1,10 @@
+[[getCards]]
+==== HTTP Request
+
+include::{snippets}/getCards/http-request.adoc[]
+include::{snippets}/getCards/query-parameters.adoc[]
+
+==== HTTP Response
+
+include::{snippets}/getCards/http-response.adoc[]
+include::{snippets}/getCards/response-fields.adoc[]

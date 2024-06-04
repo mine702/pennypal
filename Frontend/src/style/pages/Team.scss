@@ -1,0 +1,14 @@
+.team {
+    width: 50rem;
+    max-width: 55rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    &__container {
+        background-color: $black;
+        width: 100%;
+    }
+}

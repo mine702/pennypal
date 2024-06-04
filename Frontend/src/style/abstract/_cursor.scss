@@ -1,0 +1,31 @@
+.clickable {
+    cursor: pointer;
+}
+
+.clickable-btn {
+    cursor: pointer;
+
+    &:hover {
+        * {
+            background-color: $main;
+        }
+    }
+}
+
+.clickable-icon {
+    cursor: pointer;
+
+    &:hover {
+        * {
+            color: $black;
+        }
+    }
+}
+
+.clickable-div {
+    cursor: pointer;
+
+    &:hover {
+        background-color: $line;
+    }
+}

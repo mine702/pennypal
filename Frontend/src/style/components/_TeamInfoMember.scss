@@ -1,0 +1,29 @@
+.teamInfoMember {
+    &__itemList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    &__invite {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: start;
+        padding-left: 3rem;
+
+        &-button {
+            border: none;
+            background-color: transparent;
+
+            color: $gray;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

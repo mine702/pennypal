@@ -1,0 +1,101 @@
+@import '@/style/abstract/variables';
+@import '@/style/abstract/fonts';
+
+.teamTeamInfo {
+    width: 100%;
+    padding: 20px;
+    background-color: $bright;
+    border-radius: $RADIUS;
+    font-size: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__title {
+        &-text {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            &-button {
+                $padding: 0.4rem;
+                letter-spacing: 3px;
+                padding: $padding;
+
+                color: $bright;
+                background-color: black;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    div {
+        font-family: 'Esa-Bold';
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-name {
+            display: flex;
+            gap: 10px;
+
+            div {
+                font-size: 40px;
+            }
+
+            &-head {
+                div {
+                    font-family: 'Esa-Light';
+                    display: flex;
+                    font-size: 20px;
+                }
+
+                display: flex;
+                align-items: center;
+                gap: 3px;
+            }
+        }
+    }
+
+    &__middle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+
+        &-desc {
+            background-color: $main;
+            font-family: 'Wanted-Medium' !important;
+            font-size: 20px;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            width: 100%;
+            box-shadow: 0px 3px 0px $black;
+            color: $bright;
+        }
+    }
+
+    .unit {
+        font-size: 27px;
+        font-family: 'Esa-Light';
+        margin-left: 0.4rem;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        color: $dark;
+        font-family: 'Esa-Medium';
+    }
+
+    .value {
+        font-size: 42px;
+        letter-spacing: -3px;
+    }
+}

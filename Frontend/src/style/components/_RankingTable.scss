@@ -1,0 +1,137 @@
+.rankingTable {
+    div {
+        font-family: 'Wanted-Regular';
+    }
+
+    @mixin TABLE_LAYOUT {
+        display: grid;
+        grid-template-columns: 10% 40% 30% 20%;
+        text-align: center;
+    }
+
+    background-color: $bright;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-radius: 1rem;
+
+    &__header {
+        @include TABLE_LAYOUT();
+        font-weight: 900;
+        background-color: $sub;
+        padding: 0.7rem 0;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+
+        div {
+            color: $bright;
+            font-size: 1.3rem;
+            font-family: 'Wanted-Regular' !important;
+        }
+    }
+
+    &__content {
+        padding: 20px;
+        .first {
+            background-color: $main;
+            border-radius: 20px;
+            border: 3px solid $dark;
+            box-shadow: 0 3px 0 $dark;
+            div {
+                font-family: 'Wanted-ExtraBlack';
+                font-size: 1.5rem;
+                color: $dark;
+            }
+        }
+        .second {
+            background-color: $main;
+            border-radius: 20px;
+            border: 3px solid $dark;
+            box-shadow: 0 3px 0 $dark;
+            div {
+                font-family: 'Wanted-Black';
+                font-size: 1.3rem;
+                color: $dark;
+            }
+        }
+        .third {
+            background-color: $main;
+            border-radius: 20px;
+            border: 3px solid $dark;
+            box-shadow: 0 3px 0 $dark;
+            div {
+                font-family: 'Wanted-ExtraBold';
+                font-size: 1.1rem;
+                color: $dark;
+            }
+        }
+        div {
+            font-family: 'Wanted-Regular';
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            height: 292.8px;
+            &-item {
+                @include TABLE_LAYOUT();
+                padding: 5px 0;
+                border-bottom: 1px solid $line;
+            }
+
+            &-none {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.5rem;
+                font-family: 'Esa-Bold';
+                gap: 1rem;
+
+                &-icon {
+                    height: 5rem;
+                }
+            }
+        }
+    }
+
+    &__mine {
+        @include TABLE_LAYOUT();
+        margin-top: 0.4rem;
+        padding: 0.6rem 0;
+        background-color: $sub;
+        border-radius: 1rem;
+        border: 3px solid $dark;
+        box-shadow: 0 3px 0 $dark;
+
+        * {
+            font-family: 'Wanted-Black' !important;
+        }
+
+        &-noteam {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 0.4rem;
+            padding: 0.6rem 0;
+            background-color: $sub;
+
+            font-family: 'Wanted-Bold' !important;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__pagenation {
+        display: flex;
+        justify-content: center;
+
+        &-box {
+            padding: 0.3rem;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
